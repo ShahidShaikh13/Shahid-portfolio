@@ -1,0 +1,16 @@
+<svg width="320" height="140" viewBox="0 0 320 140" xmlns="http://www.w3.org/2000/svg" style="background:#2f3640; border-radius:10px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <!-- Background -->
+  <rect width="320" height="140" fill="#2f3640" rx="10" ry="10"></rect>
+  
+  <!-- Task list icon -->
+  <rect x="25" y="40" width="50" height="12" fill="#8a79ff" rx="3" ry="3"></rect>
+  <rect x="25" y="60" width="50" height="12" fill="#8a79ff" rx="3" ry="3"></rect>
+  <rect x="25" y="80" width="30" height="12" fill="#8a79ff" rx="3" ry="3"></rect>
+  <rect x="85" y="42" width="12" height="12" fill="#f5f6fa" rx="3" ry="3"></rect>
+  <rect x="85" y="62" width="12" height="12" fill="#f5f6fa" rx="3" ry="3"></rect>
+  <rect x="85" y="82" width="12" height="12" fill="#f5f6fa" rx="3" ry="3"></rect>
+
+  <!-- Text -->
+  <text x="115" y="75" fill="#f5f6fa" font-size="34" font-weight="700" letter-spacing="4" style="text-transform: uppercase;">TASK DASHBOARD</text>
+  <text x="115" y="110" fill="#7f8fa6" font-size="16" font-weight="500" letter-spacing="2" style="text-transform: uppercase;">PROJECT MANAGEMENT TOOL</text>
+</svg>
