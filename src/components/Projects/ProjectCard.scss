@@ -1,0 +1,278 @@
+@import "../../_globalColor";
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.project-card-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.project-image-container {
+  height: 150px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+  .project-card:hover & {
+    transform: scale(1.1);
+  }
+}
+
+.project-info {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: $titleColor;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.project-tagline {
+  font-size: 0.9rem;
+  color: $subTitle;
+  margin: 0;
+  font-weight: 500;
+}
+
+.project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: $textColor;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.project-tech {
+  margin-bottom: 1.5rem;
+
+  h4 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: $titleColor;
+    margin: 0 0 0.5rem 0;
+    text-align: center;
+  }
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.tech-tag {
+  background: $buttonColor;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background: $buttonHover;
+  }
+}
+
+.project-buttons {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.project-button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+
+  &.github-button {
+    background: #333;
+    color: white;
+
+    &:hover {
+      background: #555;
+      transform: translateY(-2px);
+    }
+  }
+
+  &.demo-button {
+    background: $buttonColor;
+    color: white;
+
+    &:hover {
+      background: $buttonHover;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// Dark mode styles
+.dark-mode .project-card {
+  background: #2d3748;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .project-name {
+  color: #f7fafc;
+}
+
+.dark-mode .project-tagline {
+  color: #a0aec0;
+}
+
+.dark-mode .project-details {
+  background: rgba(45, 55, 72, 0.95);
+}
+
+.dark-mode .project-description {
+  color: #e2e8f0;
+}
+
+.dark-mode .project-tech h4 {
+  color: #f7fafc;
+}
+
+.dark-mode .tech-tag {
+  background: #4a5568;
+  color: #e2e8f0;
+
+  &:hover {
+    background: #2d3748;
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .project-card {
+    height: 280px;
+  }
+
+  .project-image-container {
+    height: 120px;
+  }
+
+  .project-name {
+    font-size: 1.1rem;
+  }
+
+  .project-tagline {
+    font-size: 0.8rem;
+  }
+
+  .project-details {
+    padding: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.8rem;
+  }
+
+  .project-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    height: 260px;
+  }
+
+  .project-image-container {
+    height: 100px;
+  }
+
+  .project-info {
+    padding: 0.75rem;
+  }
+
+  .project-name {
+    font-size: 1rem;
+  }
+
+  .project-tagline {
+    font-size: 0.75rem;
+  }
+
+  .project-details {
+    padding: 0.75rem;
+  }
+
+  .project-description {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .tech-tags {
+    gap: 0.25rem;
+  }
+
+  .tech-tag {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.4rem;
+  }
+} 
