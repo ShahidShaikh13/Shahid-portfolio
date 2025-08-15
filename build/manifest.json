@@ -3,17 +3,29 @@
   "name": "Shahid Shaikh - Computer Science & Finance Student",
   "icons": [
     {
+<<<<<<< HEAD
       "src": "./favicon.ico",
+=======
+      "src": "/favicon.ico",
+>>>>>>> 90258cec82cf3cfdd43ba939f4e9d9efa65a5165
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
+<<<<<<< HEAD
       "src": "./android-chrome-192x192.png?v8=qAJ44G5Bm7",
+=======
+      "src": "/android-chrome-192x192.png?v8=qAJ44G5Bm7",
+>>>>>>> 90258cec82cf3cfdd43ba939f4e9d9efa65a5165
       "type": "image/png",
       "sizes": "192x192"
     },
     {
+<<<<<<< HEAD
       "src": "./android-chrome-384x384.png?v8=qAJ44G5Bm7",
+=======
+      "src": "/android-chrome-384x384.png?v8=qAJ44G5Bm7",
+>>>>>>> 90258cec82cf3cfdd43ba939f4e9d9efa65a5165
       "type": "image/png",
       "sizes": "384x384"
     }
