@@ -1,0 +1,14 @@
+{
+  "data": {
+    "user": {
+      "name": "Shahid Shaikh",
+      "bio": "Computer Science & Finance Student | Developer",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/12345678?v=4",
+      "location": "Boston, MA",
+      "pinnedItems": {
+        "totalCount": 0,
+        "edges": []
+      }
+    }
+  }
+}

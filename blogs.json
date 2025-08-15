@@ -1,0 +1,12 @@
+{
+  "status": "ok",
+  "feed": {
+    "url": "https://medium.com/feed/@username",
+    "title": "Medium Blog",
+    "link": "https://medium.com/@username",
+    "author": "Shahid Shaikh",
+    "description": "Blog posts from Medium",
+    "image": ""
+  },
+  "items": []
+}
